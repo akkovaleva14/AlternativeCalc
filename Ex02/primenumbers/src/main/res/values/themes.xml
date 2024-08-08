@@ -1,0 +1,27 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Ex02" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/button_color</item>
+        <item name="colorPrimaryDark">@color/button_color_darker</item>
+        <item name="colorAccent">@color/button_color_darker</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:windowBackground">@color/background_color</item>
+    </style>
+
+    <style name="Theme.Ex02" parent="Base.Theme.Ex02" />
+
+    <style name="ButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/button_background</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:elevation">4dp</item>
+    </style>
+
+    <style name="MyActionBar" parent="Widget.AppCompat.ActionBar.Solid">
+        <item name="android:background">@color/button_color</item>
+        <item name="android:titleTextStyle">@style/MyActionBarTitleText</item>
+    </style>
+
+    <style name="MyActionBarTitleText" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+</resources>

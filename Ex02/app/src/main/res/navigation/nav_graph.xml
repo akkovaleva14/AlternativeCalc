@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/menuFragment">
+
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.ex02.MenuFragment"
+        android:label="Menu"
+        tools:layout="@layout/fragment_menu">
+        <action
+            android:id="@+id/action_menuFragment_to_circlesFragment"
+            app:destination="@id/circlesFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_primeNumbersFragment"
+            app:destination="@id/primeNumbersFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_thermometerFragment"
+            app:destination="@id/thermometerFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_speechModuleFragment"
+            app:destination="@id/speechModuleFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_calculatorFragment"
+            app:destination="@id/calculatorFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/circlesFragment"
+        android:name="com.example.circles.CirclesFragment"
+        android:label="Circles"
+        tools:layout="@layout/fragment_circles">
+        <action
+            android:id="@+id/action_circlesFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/primeNumbersFragment"
+        android:name="com.example.primenumbers.PrimeNumbersFragment"
+        android:label="Prime Numbers"
+        tools:layout="@layout/fragment_prime_numbers">
+        <action
+            android:id="@+id/action_primeNumbersFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/thermometerFragment"
+        android:name="com.example.thermometer.ThermometerFragment"
+        android:label="Thermometer"
+        tools:layout="@layout/fragment_thermometer">
+        <action
+            android:id="@+id/action_thermometerFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/speechModuleFragment"
+        android:name="com.example.speechmodule.SpeechModuleFragment"
+        android:label="Speech Module"
+        tools:layout="@layout/fragment_speech_module">
+        <action
+            android:id="@+id/action_speechModuleFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/calculatorFragment"
+        android:name="com.example.calculator.CalculatorFragment"
+        android:label="Calculator"
+        tools:layout="@layout/fragment_calculator">
+        <action
+            android:id="@+id/action_calculatorFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+
+</navigation>

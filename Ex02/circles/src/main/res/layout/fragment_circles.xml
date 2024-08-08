@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.example.circles.CirclesViewModel" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editTextX1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/input_x1"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="20"
+                android:text="@={viewModel.x1}"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextY1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/input_y1"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="20"
+                android:text="@={viewModel.y1}"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextR1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/input_r1"
+                android:inputType="numberDecimal"
+                android:maxLength="20"
+                android:text="@={viewModel.r1}"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextX2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/input_x2"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="20"
+                android:text="@={viewModel.x2}"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextY2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/input_y2"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="20"
+                android:text="@={viewModel.y2}"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextR2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/input_r2"
+                android:inputType="numberDecimal"
+                android:maxLength="20"
+                android:text="@={viewModel.r2}"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/buttonCheckIntersection"
+                style="@style/ButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:onClick="@{() -> viewModel.checkIntersection()}"
+                android:text="@string/check_intersection" />
+
+            <TextView
+                android:id="@+id/textViewResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@{viewModel.result}"
+                android:textAppearance="?attr/textAppearanceListItem" />
+        </LinearLayout>
+    </ScrollView>
+</layout>

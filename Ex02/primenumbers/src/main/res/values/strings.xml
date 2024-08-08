@@ -1,0 +1,9 @@
+<resources>
+    <string name="enter_a_number">Enter a number:</string>
+    <string name="grouping_order">Grouping order:</string>
+    <string name="check_primes">Check Primes</string>
+    <string-array name="grouping_order">
+        <item>Higher</item>
+        <item>Lower</item>
+    </string-array>
+</resources>

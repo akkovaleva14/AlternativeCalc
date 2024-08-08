@@ -1,0 +1,5 @@
+<resources>
+    <string name="enter_temperature">Enter temperature</string>
+    <string name="check_temperature">Check temperature</string>
+    <string name="output_mode">Output mode:</string>
+</resources>

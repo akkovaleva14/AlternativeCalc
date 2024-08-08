@@ -1,0 +1,15 @@
+<resources>
+    <string name="enter_a_number">Enter a number</string>
+    <string name="factorial">Factorial</string>
+    <string name="prime_test">Prime Test</string>
+    <string name="run_all">Run All</string>
+    <string name="run">RUN</string>
+    <string name="empty">" "</string>
+    <string name="square_root">Square root</string>
+    <string name="cube_root">Cube root</string>
+    <string name="lg">log10</string>
+    <string name="ln">ln</string>
+    <string name="squaring">Squaring</string>
+    <string name="cubing">Cubing</string>
+    <string name="clear">Clear</string>
+</resources>
